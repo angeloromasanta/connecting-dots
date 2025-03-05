@@ -361,7 +361,7 @@ const HeptagramWithMovingDots = () => {
             )}
 
             {/* Center point */}
-            <circle cx="200" cy="200" r="2" fill="#6b7280" />
+            <circle cx="200" cy="200" r="2" fill="white" />
 
             {/* Completed shapes */}
             {shapes.map((shape, shapeIndex) => (
