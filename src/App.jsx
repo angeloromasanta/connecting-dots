@@ -322,9 +322,12 @@ const HeptagramWithMovingDots = () => {
 
   return (
     <div className="flex flex-col items-center justify-center w-full h-full bg-white p-6">
-      <h2 className="text-3xl font-light mb-6 text-gray-800">
-        Why different people can disagree on the same data
-      </h2>
+<h2 className="text-3xl font-light mb-2 text-gray-800">
+  What do you see here?
+</h2>
+<p className="text-xl font-light mb-6 text-gray-600">
+  How people can disagree on the same data
+</p>
 
       {/* Main visualization */}
       <div className="relative w-full max-w-xl mb-8">
@@ -442,7 +445,7 @@ const HeptagramWithMovingDots = () => {
               : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
           }`}
         >
-          {showTriangles ? 'Hide Triangles' : 'Show Triangles'}
+          {showTriangles ? 'Hide Triangles' : 'Perspective 1'}
         </button>
 
         <button
@@ -453,7 +456,7 @@ const HeptagramWithMovingDots = () => {
               : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
           }`}
         >
-          {showRectangles ? 'Hide Rectangles' : 'Show Rectangles'}
+          {showRectangles ? 'Hide Rectangles' : 'Perspective 2'}
         </button>
 
         <button
@@ -464,7 +467,7 @@ const HeptagramWithMovingDots = () => {
               : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
           }`}
         >
-          {showPath ? 'Hide Path' : 'Show Path'}
+          {showPath ? 'Hide Path' : 'Perspective 3'}
         </button>
       </div>
 
