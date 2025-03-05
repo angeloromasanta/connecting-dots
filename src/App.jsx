@@ -5,7 +5,7 @@ const HeptagramWithMovingDots = () => {
   const [numDots, setNumDots] = useState(12);
   const [speed, setSpeed] = useState(0.2);
   const [deceleration, setDeceleration] = useState(1);
-  const [rotationRate, setRotationRate] = useState(1);
+  const [rotationRate, setRotationRate] = useState(10);
   const [rotationAngle, setRotationAngle] = useState(0);
   const [showPath, setShowPath] = useState(false);
   const [shapes, setShapes] = useState([]);
@@ -547,8 +547,8 @@ const HeptagramWithMovingDots = () => {
             </label>
             <input
               type="range"
-              min="-10"
-              max="10"
+              min="-20"
+              max="20"
               value={rotationRate}
               onChange={(e) => setRotationRate(parseInt(e.target.value))}
               className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
