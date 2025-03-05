@@ -333,7 +333,7 @@ const HeptagramWithMovingDots = () => {
       <div className="relative w-full max-w-xl mb-8">
         <svg
           viewBox="0 0 400 400"
-          className="w-full shadow-lg rounded-lg bg-gray-50"
+          className="w-full"
           onMouseDown={handleMouseDown}
         >
           {/* Rotation container */}
@@ -353,7 +353,7 @@ const HeptagramWithMovingDots = () => {
               <path
                 d={generateHeptagramPath()}
                 fill="none"
-                stroke="#9ca3af"
+                stroke="#edc42f"
                 strokeWidth="1.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
